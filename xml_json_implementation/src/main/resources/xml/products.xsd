@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="products">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="category" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="subcategory" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="product" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="manufacturer" type="xs:string"/>
+                                                    <xs:element name="model">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:pattern value="[a-zA-Z]{2}\d{3}"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="dateOfManufacture">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string"> <!-- (DD-MM-YYYY)-->
+                                                                <xs:pattern
+                                                                        value="(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[012])-(19|20)\d\d"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="color"> <!-- [a-zA-Z]{3,} -->
+                                                        <xs:simpleType>
+                                                            <xs:restriction>
+                                                                <xs:pattern value="[a-zA-Z]{3,}"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="price" type="xs:float" default="0.0"/>
+                                                    <xs:element name="amount" type="xs:integer" default="0"/>
+
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="nameSubcategory" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="nameCategory" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

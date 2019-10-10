@@ -1,0 +1,8 @@
+parser\JaxbParser.class
+validator\XmlValidator.class
+parser\ObjToJsonParser.class
+parser\StaxJaxbParser.class
+build\AppMain.class
+parser\ProductToJsonParser.class
+validator\XmlValidator2.class
+parser\MainParser.class
