@@ -1,0 +1,4 @@
+entity\Category.class
+entity\Products.class
+entity\Product.class
+entity\Subcategory.class

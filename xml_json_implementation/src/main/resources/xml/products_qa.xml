@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<products
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="products.xsd">
+
+    <category nameCategory="Satellite systems">
+        <subcategory nameSubcategory="receivers">
+            <product>
+                <manufacturer>Giniral Satellite</manufacturer>
+                <model>ss001</model>                    <!-- AA999(two letters and three numbers).-->
+                <dateOfManufacture>22-07-1999</dateOfManufacture> <!-- (DD-MM-YYYY).-->
+                <color>Black</color>
+                <price>14.99</price>
+                <amount>7</amount>
+            </product>
+
+            <product>
+                <manufacturer>SomY</manufacturer>
+                <model>ss002</model>
+                <dateOfManufacture>07-01-2018</dateOfManufacture>
+                <color>Black</color>
+                <price>34.33</price>
+                <amount>13</amount>
+            </product>
+        </subcategory>
+
+        <subcategory nameSubcategory="headphones TV">
+
+            <product>
+                <manufacturer>Sound3D</manufacturer>
+                <model>ht001</model>
+                <dateOfManufacture>22-01-2018</dateOfManufacture>
+                <color>Black</color>
+                <price>39.12</price>
+                <amount>7</amount>
+            </product>
+
+            <product>
+                <manufacturer>BurnLine</manufacturer>
+                <model>ht002</model>
+                <dateOfManufacture>13-11-2019</dateOfManufacture>
+                <color>Red</color>
+                <price>24.49</price>
+                <amount>8</amount>
+            </product>
+        </subcategory>
+
+        <subcategory nameSubcategory="hi-fi satelite">
+            <product>
+                <manufacturer>Somy</manufacturer>
+                <model>as001</model>
+                <dateOfManufacture>22-11-2017</dateOfManufacture>
+                <color>Brown</color>
+                <price>59.99</price>
+                <amount>4</amount>
+            </product>
+
+            <product>
+                <manufacturer>Irwa</manufacturer>
+                <model>as002</model>
+                <dateOfManufacture>13-09-2019</dateOfManufacture>
+                <color>White</color>
+                <price>79.99</price>
+                <amount>3</amount>
+            </product>
+        </subcategory>
+    </category>
+</products>
